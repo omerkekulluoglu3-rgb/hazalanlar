@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazalanlar</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDK (compat versiyon - GitHub Pages için en kolay) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hazalanlar İçin Sohbet</h1>
+    <small>Hazalmak için Hemen Konuşmaya Başla</small>
+
+    <div id="messages"></div>
+
+    <form id="message-form">
+      <input type="text" id="name-input" placeholder="Adın veya takma ad" value="Öğrenci">
+      <input type="text" id="message-input" placeholder="Mesaj yaz..." required>
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
